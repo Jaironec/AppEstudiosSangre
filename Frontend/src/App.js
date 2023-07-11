@@ -116,6 +116,10 @@ function App() {
     setSelectedBloodStudy(study);
   };
 
+  const redirectToSwagger = () => {
+    window.location.href = 'http://localhost:8080/swagger-ui/index.html#/';
+  };
+
   return (
     <div className="App">
       <h1>Estudios de Sangre</h1>
@@ -219,6 +223,8 @@ function App() {
           </tbody>
         </table>
       )}
+
+      <button onClick={redirectToSwagger}>Ir a Swagger</button>
     </div>
   );
 }

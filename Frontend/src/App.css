@@ -1,38 +1,163 @@
-.App {
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* Estilos para el formulario de actualización */
+.form-container form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.buttons-container button {
+  padding: 12px 20px;
+  margin-left: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons-container button:first-child {
+  background-color: #ccc;
+}
+
+.buttons-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-container {
+  margin-bottom: 24px;
+}
+
+.search-container label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.search-container input[type="text"] {
+  width: 300px;
+  padding: 12px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-container input[type="text"]::placeholder {
+  color: #999;
+}
+
+/* Estilos para la tabla de estudios de sangre */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f7f7f7;
+}
+
+table td:last-child {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos para los botones de acción en la tabla */
+table button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table button:last-child {
+  background-color: #dc3545;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table button:hover {
+  background-color: #0056b3;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos para el botón de redirección a Swagger */
+.App button.redirect-button {
+  margin-top: 40px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App button.redirect-button:hover {
+  background-color: #1f9233;
 }
